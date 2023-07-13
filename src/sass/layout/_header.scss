@@ -1,0 +1,42 @@
+header {
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 11111;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    .header-logo {
+      figure {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+    .header-basket {
+      .base-btn {
+        padding: 8px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 4px;
+        background: var(--primary, #ff7010);
+
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 22px;
+        color: var(--white, #fff);
+        text-align: center;
+        font-family: "SF Pro Display";
+      }
+    }
+  }
+}

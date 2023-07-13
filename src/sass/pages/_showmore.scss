@@ -1,0 +1,40 @@
+.show-more-container {
+  padding-bottom: 60px;
+  max-width: 850px;
+  margin: 0 auto;
+  .content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.4s;
+    max-height: 490px;
+    span {
+      color: #191919;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      font-family: "SF Pro Display";
+      text-align: justify;
+    }
+    &.gradient {
+      -webkit-mask-image: linear-gradient(#fff, rgba(255, 255, 255, 0));
+    }
+    &.maxHeight {
+      max-height: 150px;
+    }
+    span {
+      padding: 5px 0;
+    }
+  }
+  .button {
+    padding: 1rem 0;
+    color: #0f7c90;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    span {
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+}

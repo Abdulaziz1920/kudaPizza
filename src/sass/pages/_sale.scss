@@ -1,0 +1,23 @@
+.sale {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  .sale-items {
+    position: relative;
+    max-width: 300px;
+    height: 343px;
+    figure {
+      figcaption {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        font-family: "Inter";
+      }
+    }
+  }
+}

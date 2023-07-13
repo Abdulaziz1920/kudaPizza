@@ -1,0 +1,70 @@
+.combo {
+  .combo-title {
+    h1 {
+      color: var(--black, #191919);
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 48px;
+      font-family: "Inter";
+    }
+  }
+  .combo-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    .combo-items {
+      max-width: 300px;
+      height: 460px;
+      border-radius: 12px;
+      border: 1px solid var(--line-gray, #f0f0f0);
+      background: var(--white, #fff);
+      figure {
+        padding: 0 20px 20px;
+        img {
+          width: 100%;
+        }
+        figcaption {
+          h2 {
+            color: var(--black, #191919);
+            font-family: "SF Pro Display";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+          }
+        }
+        p {
+          padding: 12px 0 16px;
+          color: var(--black, #191919);
+          font-family: "SF Pro Display";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+        }
+        .price-btn {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          button {
+            padding: 13px 32px;
+            border-radius: 6px;
+            background: var(--primary, #ff7010);
+            color: var(--white, #fff);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            font-family: "SF Pro Display";
+          }
+          p {
+            color: var(--primary, #ff7010);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            font-family: "SF Pro Display";
+          }
+        }
+      }
+    }
+  }
+}

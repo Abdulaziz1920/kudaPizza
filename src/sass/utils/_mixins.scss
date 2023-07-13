@@ -1,0 +1,11 @@
+@function vmin($value) {
+  $viewportWidth: 100vw;
+  $viewportHeight: 100vh;
+  $base: min($viewportWidth, $viewportHeight) / 100;
+
+  // Вычисление значения в пикселях
+  $result: $value * $base;
+
+  // Возвращение значения с единицей измерения px
+  @return $result * 1px;
+}
